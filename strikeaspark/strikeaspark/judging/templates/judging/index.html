@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Welcome to the Strike a Spark Confrence</h1>
+    {% if user.is_authenticated %}
+    <h2>Hello {{ user.username }}</h2>
+    <h2>Judging Assignments: </h2>
+    <p>
+        <ul>
+            <li><a href=></a></li>
+        </ul>
+    </p>
+    {% else %}
+    <h2>Not logged in</h2>
+    {% endif %}
+</body>
+</html>
