@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oral Presentation</title>
+</head>
+<body>
+    <h1>Welcome to the Strike a Spark Confrence</h1>
+    {% if user.is_authenticated %}
+    <h2>Oral Presentation :  </h2>
+    <p>Topic <select>
+        <option value=4>4</option>
+        <option value=3>3</option>
+        <option value=2>2</option>
+        <option value=1>1</option>
+        <option value=0>0</option>
+    </select>
+    </p>
+    <p>Content Knowlage <select>
+            <option value=8>8</option>
+            <option value=7>7</option>
+            <option value=6>6</option>
+            <option value=5>5</option>
+            <option value=4>4</option>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <p>Content Presentation <select>
+            <option value=8>8</option>
+            <option value=7>7</option>
+            <option value=6>6</option>
+            <option value=5>5</option>
+            <option value=4>4</option>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <p>Volume <select>
+            <option value=4>4</option>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <p>Use of Notes <select>
+            <option value=4>4</option>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <p>Use of Language <select>
+            <option value=4>4</option>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <p>Appearance <select>
+            <option value=4>4</option>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <p>Comfort Level <select>
+            <option value=4>4</option>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <input type="submit" = value="submit">
+    {% else %}
+    <h2>Not logged in</h2>
+    <a href="{% url 'login' %}">login</a>
+    {% endif %}
+</body>
+</html>
