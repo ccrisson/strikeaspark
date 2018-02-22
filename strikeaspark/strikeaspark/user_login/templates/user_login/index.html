@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Welcome to the Strike a Spark Confrence</h1>
+    {% if user.is_authenticated %}
+    <h2>User: {{ user.username }}</h2>
+    {% else %}
+    <h2>Not logged in</h2>
+    <a href="{% url 'login' %}">login</a>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poster Presentation</title>
+</head>
+<body>
+    <h1>Welcome to the Strike a Spark Confrence</h1>
+    {% if user.is_authenticated %}
+    <h2>Poster Presentation :  </h2>
+    <p>Visual Quality <select>
+        <option value=4>4</option>
+        <option value=3>3</option>
+        <option value=2>2</option>
+        <option value=1>1</option>
+        <option value=0>0</option>
+    </select>
+    </p>
+    <p>Clarity <select>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <p>Thoroughness <select>
+                <option value=4>4</option>
+                <option value=3>3</option>
+                <option value=2>2</option>
+                <option value=1>1</option>
+                <option value=0>0</option>
+    </select>
+    </p>
+    <p>Breadth of Research <select>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <p>Depth of Research <select>
+                <option value=3>3</option>
+                <option value=2>2</option>
+                <option value=1>1</option>
+                <option value=0>0</option>
+    </select>
+    </p>
+    <p>Quality of Analysis <select>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>   
+    <p>Discussion Quality <select>
+            <option value=5>5</option>
+            <option value=4>4</option>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <p>Understanding of Research <select>
+            <option value=5>5</option>
+            <option value=4>4</option>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <p>Overall Quality <select>
+            <option value=10>10</option>
+            <option value=9>9</option>
+            <option value=8>8</option>
+            <option value=7>7</option>
+            <option value=6>6</option>
+            <option value=5>5</option>
+            <option value=4>4</option>
+            <option value=3>3</option>
+            <option value=2>2</option>
+            <option value=1>1</option>
+            <option value=0>0</option>
+    </select>
+    </p>
+    <input type="submit" = value="submit">
+    {% else %}
+    <h2>Not logged in</h2>
+    <a href="{% url 'login' %}">login</a>
+    {% endif %}
+</body>
+</html>
